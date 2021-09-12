@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+/*HEADER*/
+.header {
+    width: 100%;
+    height: 70px;
+}
+/*BARRA PROMOCIONAL*/
+.barra-promocional {
+    width: 100%;
+    height: 45px;
+    margin: auto;
+    background-color: #FF0049;
+
+}
+.barra-promocional p a {
+    text-decoration: none;
+    color: white;
+    font-family: titulo;
+    font-size: 18px;
+    text-align: center;
+    padding-top: 10px;
+}
+.barra-promocional p {
+    text-align: center;
+    font-size: 18px;
+    padding-inline-end: 10px;
+    font-family: titulo;
+    color: white;
+}
+/*MENU PRINCIPAL (DISPOSITIVOS GRANDES)*/
+.ancho {
+    width: 100%;
+    height: 70px;
+    margin: auto;
+}
+.logo {
+    width: 18%;
+    height: 70px;
+    background: white;
+    float: left;
+    padding-top: 10px;
+    box-sizing: border-box;
+}
+.logo  div a svg{
+    padding: 0;
+    margin-left:60%;
+}
+.titulo {
+    width: 12%;
+    height: 70px;
+    background: white;
+    float: left;
+    box-sizing: border-box;
+}
+.titulo p{
+    padding-top: 12px;
+}
+.barra-navegacion {
+    width: 53%;
+    height: 70px;
+    padding-top: 5px;
+    background-color: white;
+    float: left;
+    box-sizing: border-box;
+    text-align: right;
+}
+.espacio2 {
+    width: 17%;
+    height: 70px;
+    background-color: white;
+    float: left;
+    box-sizing: border-box;
+    text-align: right;
+}
+.barra-navegacion ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.barra-navegacion ul li {
+    display: inline-block;
+}
+.barra-navegacion ul li a {
+    color: #FF0049;
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+}
+.barra-navegacion ul li a:hover {
+    color: black;
+}
+.barra-navegacion ul li ul {
+    display: none;
+    position: absolute;
+    min-width: 140px;
+}
+.barra-navegacion ul li:hover>ul {
+    display: block;
+    text-align: left;
+    background-color: white;
+}
+.titulo p a {
+    color: black;
+    font-size: 25px;
+    font-family: titulo;
+    text-decoration: none;
+    padding: 0;
+}
+/*FUENTE DE LETRA*/
+@font-face {
+    font-family: titulo;
+    src: url(../Fonts/KaiseiHarunoUmi-Regular.ttf);
+}
+/*EFECTO PARTICULAS*/
+#particles-js {
+    background: url(../assets/183575.jpg);
+    background-position: center;
+    background-attachment: contain;
+    background-size: auto;
+    background: #FF0049;
+
+}
+/*MENU PRINCIPAL (DISPOSITIVOS PEQUEÑOS)*/
+#menuprincipal {
+    display: none;
+    width: 96%;
+    height: 50px;
+    padding: 0% 2%;
+    background-color: white;
+    border-bottom: 1px solid #094660;
+}
+#menuprincipal >div{
+    max-width: 960px;
+    margin: 0px auto;
+}
+#menuprincipal li{
+    display: inline-block;
+    height: 35px;
+    padding: 15px 10px 0px 10px;
+    margin-right: 5px;
+    background-color: white;
+
+}
+#menuprincipal li a:hover{
+    color: black;
+}
+#menuprincipal a{
+    font: titulo;
+    color: #FF0049;
+    text-decoration: none;
+}
+#menuicono{
+    display: none;
+    width: 95%;
+    height: 38px;
+    padding: 12px 2% 0px 3%;
+    background-color: white;
+    border-top: 1px solid #094660;
+}
+#menu-img{
+    position: relative;
+    left: 90%;
+}
+/*MAIN*/
+main{
+    width: 96%;
+    padding: 2%;
+}
+main>div{
+    max-width: 960px;
+    margin: 0px auto;
+}
+main>div>h1{
+    margin-bottom: 5px;
+    font: 30px titulo;
+}
+section{
+    margin-top: 20px;
+}
+aside{
+    margin-top: 20px;
+}
+#cursosprincipales{
+    float: left;
+    width: 65%;
+    padding-top: 30px;
+    background-color:lightgray ;
+    border-radius: 10px;
+}
+#infoadicional{
+    float: right;
+    width: 29%;
+    padding: 2%;
+    background-color: lightgray;
+    border-radius: 10px;
+}
+#infoadicional h1{
+    margin-bottom: 15px;
+}
+a{
+    text-decoration: none;
+}
+article{
+    position: relative;
+    padding: 0px 40px 20px 40px;
+}
+
+article h3{
+    text-align: center;
+    font: 16px titulo, sans-serif;
+}
+article p{
+    font: 18px titulo, sans-serif;
+    text-align: center;
+}
+section:hover{
+    transform: scale(1.10);
+}
+article figure div{
+    position: absolute;
+    left: 80%;
+}
+figure{
+    margin: 10px 0px;
+}
+figure img{
+    max-width: 98%;
+    padding: 1%;
+}
+.course-card__tag{
+    padding: 0px 5px;
+    border-radius: 50px;
+    text-transform: capitalize;
+    background-color: #fff;
+    line-height: 0.7rem;
+    padding: 5px;
+    font-size: 0.7rem;
+    display: inline-block;
+}
+

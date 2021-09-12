@@ -1,0 +1,47 @@
+.ancho{
+    display: none;
+}
+
+@media(max-width:505px) {
+    .barra-promocional {
+        width: 100%;
+        height: 55px;
+        margin: auto;
+        background-color: #FF0049;
+
+    }
+}
+
+@media(max-width:790px) {
+    body {
+        background-color: seagreen;
+    }
+
+    #barra-promocional {
+        width: 100%;
+        height: 65px;
+        margin: auto;
+        background-color: #FF0049;
+
+    }
+    #menuprincipal{
+       display: none;
+       width: 100%;
+       height: 100%;
+       padding: 0%;
+    }
+    #menuprincipal li {
+        display: block;
+        margin-right: 0px;
+        text-align: center;
+        background-color: #FF0049;
+    }
+    #menuprincipal a{
+        color: white;
+    }
+    #menuicono{
+        display: block;
+        background-color: #FF0049;
+    }
+
+}
