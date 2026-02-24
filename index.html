@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tetris Pro - Vanilla JS</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="game-container">
+        <header>
+            <h1>TETRIS<span>PRO</span></h1>
+        </header>
+
+        <main>
+            <div class="game-layout">
+                <div class="board-container">
+                    <canvas id="game-board"></canvas>
+                    <div id="overlay" class="hidden">
+                        <div class="overlay-content">
+                            <h2 id="overlay-title">PAUSA</h2>
+                            <button id="restart-btn-overlay">Reiniciar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <aside class="sidebar">
+                    <div class="stat-box">
+                        <h3>SIGUIENTE</h3>
+                        <div class="next-piece-container">
+                            <canvas id="next-piece"></canvas>
+                        </div>
+                    </div>
+
+                    <div class="stat-box">
+                        <h3>PUNTUACIÓN</h3>
+                        <p id="score">000000</p>
+                    </div>
+
+                    <div class="stat-box">
+                        <h3>NIVEL</h3>
+                        <p id="level">1</p>
+                    </div>
+
+                    <div class="stat-box">
+                        <h3>RÉCORD</h3>
+                        <p id="high-score">000000</p>
+                    </div>
+
+                    <div class="controls-info">
+                        <p>← → : Mover</p>
+                        <p>↑ : Rotar</p>
+                        <p>↓ : Bajar</p>
+                        <p>Espacio : Hard Drop</p>
+                    </div>
+
+                    <div class="button-group">
+                        <button id="start-btn">INICIAR</button>
+                        <button id="pause-btn" disabled>PAUSAR</button>
+                    </div>
+                </aside>
+            </div>
+        </main>
+
+        <footer>
+            <div class="footer-content">
+                <p>👨‍💻 Desarrollado por <strong>Isaac Esteban Haro Torres</strong></p>
+                <p class="subtitle">Ingeniero en Sistemas · Full Stack · Automatización · Data</p>
+                <div class="contact-grid">
+                    <span>📧 <a href="mailto:zackharo1@gmail.com">zackharo1@gmail.com</a></span>
+                    <span>📱 <a href="https://wa.me/59398805517" target="_blank">098805517</a></span>
+                    <span>💻 <a href="https://github.com/ieharo1" target="_blank">ieharo1</a></span>
+                    <span>🌐 <a href="#" target="_blank">Isaac Haro</a></span>
+                </div>
+                <div class="license">
+                    <p>© 2026 Isaac Esteban Haro Torres - Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Scripts en orden de dependencia -->
+    <script src="js/pieces.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/board.js"></script>
+    <script src="js/game.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
